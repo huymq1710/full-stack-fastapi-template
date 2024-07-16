@@ -127,5 +127,5 @@ volumes:
 
 networks:
   traefik-public:
-    # Allow setting it to false for testing
-    external: true
+    # For local dev, don't expect an external Traefik network
+    external: false

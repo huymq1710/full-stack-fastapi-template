@@ -236,3 +236,25 @@ Check the file [release-notes.md](./release-notes.md).
 ## License
 
 The Full Stack FastAPI Template is licensed under the terms of the MIT license.
+
+### Make it work
+Bad requests
+- Modified `traefik-public` in docker-compose.yaml
+
+Unable to login
+- `SECRET_KEY=MQpYtU1Gbj2E7hpsFY3_tEq60e_0ht3ubJZXIuoNKB8` in `.env` file
+- Call API
+```bash
+curl -X 'POST' \                                                                                                                                                                                                           Py base 21:00:18
+  'http://localhost/api/v1/users/' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE4Mjk1MDgsInN1YiI6IjEifQ.teCs_o6Jv9Chyw27EAjAuenJANAYIVnym-f8cjkFfK4' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "email": "mac.quang.huy@linecorp.com",
+  "is_active": true,
+  "is_superuser": true,
+  "full_name": "Mac Quang Huy",
+  "password": "123456"
+}'
+```
