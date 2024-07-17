@@ -245,16 +245,16 @@ Unable to login
 - `SECRET_KEY=MQpYtU1Gbj2E7hpsFY3_tEq60e_0ht3ubJZXIuoNKB8` in `.env` file
 - Call API
 ```bash
-curl -X 'POST' \                                                                                                                                                                                                           Py base 21:00:18
+curl -X 'POST' \
   'http://localhost/api/v1/users/' \
   -H 'accept: application/json' \
-  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE4Mjk1MDgsInN1YiI6IjEifQ.teCs_o6Jv9Chyw27EAjAuenJANAYIVnym-f8cjkFfK4' \
+  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjE4MzI1NjYsInN1YiI6IjEifQ.AgHpG1mXGpDj2OXp3hdK1ot4n0eSqiTVYWtp92avEDw' \
   -H 'Content-Type: application/json' \
   -d '{
   "email": "mac.quang.huy@linecorp.com",
   "is_active": true,
   "is_superuser": true,
   "full_name": "Mac Quang Huy",
-  "password": "123456"
+  "password": "0indjm8j2@U"
 }'
 ```
